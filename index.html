@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danilo Sarmento Barros | Software Developer & UnB Student</title>
-    <meta name="description" content="Portfólio de Danilo Sarmento Barros - Estudante de Engenharia de Software na Universidade de Brasília (UnB). Projetos em C#, Python, Compiladores, DevOps e IA.">
+    <meta name="description" content="Portfólio de Danilo Sarmento Barros - Estudante de Engenharia de Software na Universidade de Brasília (UnB). Projetos em Liaison, C#, Python, Compiladores e IA.">
     <meta name="author" content="Danilo Sarmento Barros">
     
     <!-- Open Graph -->
@@ -85,7 +85,7 @@
                         <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
                         <span class="tech-pill"><i class="fa-solid fa-code"></i> C# / .NET</span>
                         <span class="tech-pill"><i class="fa-solid fa-microchip"></i> C / C++</span>
-                        <span class="tech-pill"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="tech-pill"><i class="fa-brands fa-react"></i> React / Web</span>
                         <span class="tech-pill"><i class="fa-solid fa-brain"></i> NLP & ML</span>
                     </div>
 
@@ -121,7 +121,7 @@
                     <div class="floating-card card-2">
                         <i class="fa-solid fa-terminal icon-purple"></i>
                         <div>
-                            <span class="floating-val">Liaison & Bot</span>
+                            <span class="floating-val">Liaison & JakeBot</span>
                             <span class="floating-lbl">Sistemas Inteligentes</span>
                         </div>
                     </div>
@@ -133,11 +133,11 @@
         <section class="stats-bar">
             <div class="container stats-grid">
                 <div class="stat-card">
-                    <h3 class="stat-number" data-target="9">0</h3>
-                    <p class="stat-label">Repositórios de Destaque</p>
+                    <h3 class="stat-number" data-target="4">0</h3>
+                    <p class="stat-label">Projetos de Destaque</p>
                 </div>
                 <div class="stat-card">
-                    <h3 class="stat-number" data-target="5">0</h3>
+                    <h3 class="stat-number" data-target="4">0</h3>
                     <p class="stat-label">Linguagens Dominadas</p>
                 </div>
                 <div class="stat-card">
@@ -168,7 +168,7 @@
                             Sou estudante na <strong>Universidade de Brasília (UnB)</strong>, focado em desenvolvimento de software, arquitetura de sistemas, algoritmos e engenharia de software de alta performance.
                         </p>
                         <p>
-                            Minha jornada na computação combina rigor acadêmico com projetos práticos do mundo real: desde o desenvolvimento de sistemas para ONGs e integração social (como o <strong>Liaison</strong>) e bots inteligentes de classificação de sentimentos (<strong>Jakebot</strong>), até compiladores com <strong>Flex & Bison</strong> e automação financeira em <strong>C#</strong>.
+                            Minha jornada na computação combina rigor acadêmico com projetos práticos do mundo real: desde o desenvolvimento da plataforma <strong>Liaison</strong> para integração de estudantes e iniciativas sociais, bots de classificação de sentimentos (<strong>Jakebot</strong>), até compiladores com <strong>Flex & Bison</strong> e automação financeira em <strong>C#</strong>.
                         </p>
                         
                         <div class="bio-highlights">
@@ -183,7 +183,7 @@
                                 <div class="bio-icon"><i class="fa-solid fa-lightbulb"></i></div>
                                 <div>
                                     <h4>Foco de Atuação</h4>
-                                    <p>Sistemas Web, Bots com IA, DevOps e Arquitetura</p>
+                                    <p>Sistemas Web, Bots com IA e Arquitetura de Software</p>
                                 </div>
                             </div>
                         </div>
@@ -201,11 +201,11 @@
   <span class="code-key">"universidade"</span>: <span class="code-str">"Universidade de Brasília (UnB)"</span>,
   <span class="code-key">"github"</span>: <span class="code-str">"https://github.com/auslogyc"</span>,
   <span class="code-key">"instagram"</span>: <span class="code-str">"@danilosbz"</span>,
-  <span class="code-key">"interesses"</span>: [
-    <span class="code-str">"Engenharia de Software"</span>,
-    <span class="code-str">"Inteligência Artificial & NLP"</span>,
-    <span class="code-str">"Compiladores & Algoritmos"</span>,
-    <span class="code-str">"DevOps & CI/CD"</span>
+  <span class="code-key">"projetos_destaque"</span>: [
+    <span class="code-str">"Liaison"</span>,
+    <span class="code-str">"Jakebot"</span>,
+    <span class="code-str">"Controle de Gastos"</span>,
+    <span class="code-str">"Compiladores (Flex & Bison)"</span>
   ],
   <span class="code-key">"status"</span>: <span class="code-str">"Construindo o futuro com código!"</span>
 }</code></pre>
@@ -229,14 +229,13 @@
                     <button class="filter-btn active" data-filter="all">Todos</button>
                     <button class="filter-btn" data-filter="ai-web">IA & Web</button>
                     <button class="filter-btn" data-filter="systems">Sistemas & C#</button>
-                    <button class="filter-btn" data-filter="compilers">Compiladores & ED</button>
-                    <button class="filter-btn" data-filter="devops">DevOps & UnB</button>
+                    <button class="filter-btn" data-filter="compilers">Compiladores</button>
                 </div>
 
                 <!-- Projects Grid -->
                 <div class="projects-grid" id="projects-grid">
                     <!-- Project 1: Liaison -->
-                    <article class="project-card" data-category="ai-web devops">
+                    <article class="project-card" data-category="ai-web">
                         <div class="project-banner bg-gradient-liaison">
                             <i class="fa-solid fa-handshake-angle project-icon"></i>
                             <span class="project-tag-badge">Destaque UnB</span>
@@ -256,7 +255,7 @@
                                 <button class="btn-detail" onclick="openProjectModal('liaison')">
                                     <i class="fa-solid fa-eye"></i> Detalhes
                                 </button>
-                                <a href="https://github.com/auslogyc" target="_blank" rel="noopener" class="btn-github-link">
+                                <a href="https://github.com/auslogyc/Liaison" target="_blank" rel="noopener" class="btn-github-link">
                                     <i class="fa-brands fa-github"></i> Repositório
                                 </a>
                             </div>
@@ -264,7 +263,7 @@
                     </article>
 
                     <!-- Project 2: Jakebot -->
-                    <article class="project-card" data-category="ai-web devops">
+                    <article class="project-card" data-category="ai-web">
                         <div class="project-banner bg-gradient-jakebot">
                             <i class="fa-solid fa-robot project-icon"></i>
                             <span class="project-tag-badge">MDS UnB</span>
@@ -346,62 +345,6 @@
                             </div>
                         </div>
                     </article>
-
-                    <!-- Project 5: GCES Individual -->
-                    <article class="project-card" data-category="devops">
-                        <div class="project-banner bg-gradient-gces">
-                            <i class="fa-solid fa-server project-icon"></i>
-                            <span class="project-tag-badge">DevOps UnB</span>
-                        </div>
-                        <div class="project-body">
-                            <h3 class="project-title">GCES Individual</h3>
-                            <p class="project-desc">
-                                Projeto prático de Gestão de Configuração e Evolução de Software englobando containerização em Docker, pipelines de CI/CD e testes automatizados.
-                            </p>
-                            <div class="project-tags">
-                                <span>Docker</span>
-                                <span>CI/CD</span>
-                                <span>Testes Unitários</span>
-                                <span>Git Flow</span>
-                            </div>
-                            <div class="project-actions">
-                                <button class="btn-detail" onclick="openProjectModal('gces')">
-                                    <i class="fa-solid fa-eye"></i> Detalhes
-                                </button>
-                                <a href="https://github.com/auslogyc/gces_individual" target="_blank" rel="noopener" class="btn-github-link">
-                                    <i class="fa-brands fa-github"></i> Repositório
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 6: Estruturas de Dados -->
-                    <article class="project-card" data-category="compilers">
-                        <div class="project-banner bg-gradient-ed">
-                            <i class="fa-solid fa-diagram-project project-icon"></i>
-                            <span class="project-tag-badge">Algoritmos</span>
-                        </div>
-                        <div class="project-body">
-                            <h3 class="project-title">Estruturas de Dados</h3>
-                            <p class="project-desc">
-                                Coleção de estruturas de dados essenciais (árvores AVL, grafos, listas encadeadas, tabelas hash) e algoritmos de busca e ordenação implementados com otimização.
-                            </p>
-                            <div class="project-tags">
-                                <span>C / C++</span>
-                                <span>Árvores & Grafos</span>
-                                <span>Complexidade O(n)</span>
-                                <span>Algoritmos</span>
-                            </div>
-                            <div class="project-actions">
-                                <button class="btn-detail" onclick="openProjectModal('ed')">
-                                    <i class="fa-solid fa-eye"></i> Detalhes
-                                </button>
-                                <a href="https://github.com/auslogyc/Estruturas-de-Dados" target="_blank" rel="noopener" class="btn-github-link">
-                                    <i class="fa-brands fa-github"></i> Repositório
-                                </a>
-                            </div>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
@@ -458,7 +401,7 @@
                     <div class="skill-category-card">
                         <div class="skill-cat-header">
                             <i class="fa-solid fa-cubes icon-purple"></i>
-                            <h3>Ferramentas & DevOps</h3>
+                            <h3>Ferramentas & Frameworks</h3>
                         </div>
                         <div class="skill-list">
                             <div class="skill-item">
@@ -470,7 +413,7 @@
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span>Docker & Containers</span>
+                                    <span>React & Web UI</span>
                                     <span>82%</span>
                                 </div>
                                 <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
@@ -502,9 +445,7 @@
                             <span class="chip"><i class="fa-solid fa-check"></i> Engenharia de Software</span>
                             <span class="chip"><i class="fa-solid fa-check"></i> Orientação a Objetos</span>
                             <span class="chip"><i class="fa-solid fa-check"></i> Processamento de Linguagem Natural</span>
-                            <span class="chip"><i class="fa-solid fa-check"></i> Estruturas de Dados Avançadas</span>
                             <span class="chip"><i class="fa-solid fa-check"></i> Teoria dos Compiladores</span>
-                            <span class="chip"><i class="fa-solid fa-check"></i> Testes & Cobertura de Código</span>
                             <span class="chip"><i class="fa-solid fa-check"></i> Métodos Ágeis (Scrum/Kanban)</span>
                         </div>
                     </div>
@@ -539,6 +480,10 @@
                         
                         <div class="disciplinas-grid">
                             <div class="disc-card">
+                                <h4>Liaison & Projetos Sociais</h4>
+                                <p>Conexão entre estudantes e iniciativas de extensão e voluntariado comunitário.</p>
+                            </div>
+                            <div class="disc-card">
                                 <h4>MDS - Métodos de Dev. de Software</h4>
                                 <p>Criação de produtos de software completos com metodologias ágeis e CI/CD (Projeto <em>Jakebot</em>).</p>
                             </div>
@@ -547,12 +492,8 @@
                                 <p>Construção de analisadores léxicos e sintáticos utilizando ferramentas Flex & Bison em C/C++.</p>
                             </div>
                             <div class="disc-card">
-                                <h4>GCES - Gestão de Configuração</h4>
-                                <p>Automatização de builds, containerização Docker, gerenciamento de dependências e testes.</p>
-                            </div>
-                            <div class="disc-card">
-                                <h4>Estruturas de Dados & Algoritmos</h4>
-                                <p>Análise de complexidade temporal/espacial, implementação de árvores, grafos e tabelas hash.</p>
+                                <h4>Sistemas & Arquitetura</h4>
+                                <p>Desenvolvimento em C# com Clean Architecture e princípios de código limpo.</p>
                             </div>
                         </div>
                     </div>

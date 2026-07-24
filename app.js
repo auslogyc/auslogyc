@@ -31,7 +31,7 @@ function initTypingEffect() {
     const words = [
         'Engenharia de Software',
         'Inteligência Artificial & NLP',
-        'Sistemas de Alto Desempenho',
+        'Sistemas em C# / .NET',
         'Compiladores & Algoritmos'
     ];
 
@@ -116,13 +116,13 @@ function initStatCounters() {
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-target');
                 let count = 0;
-                const increment = Math.ceil(target / 40);
+                const increment = Math.max(1, Math.ceil(target / 30));
 
                 const updateCount = () => {
                     count += increment;
                     if (count < target) {
                         counter.innerText = count;
-                        setTimeout(updateCount, 30);
+                        setTimeout(updateCount, 40);
                     } else {
                         counter.innerText = target;
                     }
@@ -168,7 +168,7 @@ const projectData = {
             "Arquitetura escalável com foco na experiência do usuário (UX/UI)"
         ],
         techs: ["TypeScript", "React", "Node.js", "Express", "CSS Glassmorphism", "PostgreSQL"],
-        github: "https://github.com/auslogyc"
+        github: "https://github.com/auslogyc/Liaison"
     },
     jakebot: {
         title: "JakeBot - Classificador de Sentimentos",
@@ -214,36 +214,6 @@ const projectData = {
         ],
         techs: ["C / C++", "Flex (Lexer)", "Bison (Parser)", "Teoria dos Compiladores", "Makefile"],
         github: "https://github.com/auslogyc/compiladores-flex-bison"
-    },
-    gces: {
-        title: "GCES Individual - DevOps & Automação",
-        subtitle: "Gestão de Configuração e Evolução de Software | UnB",
-        icon: "fa-server",
-        gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        desc: "Projeto prático focado nas disciplinas avançadas de Engenharia de Software da UnB. Explora a automação completa do ciclo de vida de desenvolvimento, desde a criação de imagens Docker até pipelines de integração e entrega contínua.",
-        features: [
-            "Containerização multi-stage para otimização de imagens Docker",
-            "Automação de suíte de testes unitários e medição de cobertura de código",
-            "Integração contínua verificando padronização linter e builds de produção",
-            "Gestão rigorosa de dependências e versionamento semântico"
-        ],
-        techs: ["Docker", "Docker Compose", "CI/CD Pipelines", "Testes Automatizados", "Git Flow"],
-        github: "https://github.com/auslogyc/gces_individual"
-    },
-    ed: {
-        title: "Estruturas de Dados Avançadas",
-        subtitle: "Algoritmos e Estruturas de Dados | UnB",
-        icon: "fa-diagram-project",
-        gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-        desc: "Repositório com a implementação do zero de estruturas de dados fundamentais e avançadas para a resolução de problemas de alta complexidade computacional.",
-        features: [
-            "Árvores Balanceadas (AVL e Red-Black Tree)",
-            "Representação de Grafos e Algoritmos de Caminho Mínimo (Dijkstra, BFS, DFS)",
-            "Tabelas Hash otimizadas com tratamento dinâmico de colisões",
-            "Análise de complexidade assintótica (Notação Big-O)"
-        ],
-        techs: ["C / C++", "Estruturas de Dados", "Algoritmos em Grafos", "Ponteiros & Alocação Dinâmica"],
-        github: "https://github.com/auslogyc/Estruturas-de-Dados"
     }
 };
 
