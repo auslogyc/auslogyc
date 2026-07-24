@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danilo Sarmento Barros | Software Developer & UnB Student</title>
+    <meta name="description" content="Portfólio de Danilo Sarmento Barros - Estudante de Engenharia de Software na Universidade de Brasília (UnB). Projetos em C#, Python, Compiladores, DevOps e IA.">
+    <meta name="author" content="Danilo Sarmento Barros">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Danilo Sarmento Barros | Portfólio">
+    <meta property="og:description" content="Estudante de Engenharia de Software na UnB - Conheça meus projetos, habilidades e trajetória.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/104795603?v=4">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Ambient Background Lighting -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-container">
+        <nav class="navbar" id="navbar">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-code">&lt;</span>
+                <span class="logo-name">Danilo SB</span>
+                <span class="logo-code">/&gt;</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sobre" class="nav-item">Sobre</a></li>
+                <li><a href="#projetos" class="nav-item">Projetos</a></li>
+                <li><a href="#habilidades" class="nav-item">Habilidades</a></li>
+                <li><a href="#unb" class="nav-item">UnB & Formação</a></li>
+                <li><a href="#contato" class="nav-item">Contato</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://github.com/auslogyc" target="_blank" rel="noopener" class="icon-btn" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/danilosbz" target="_blank" rel="noopener" class="icon-btn" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="pulse-dot"></span>
+                        <span>Estudante de Engenharia na UnB</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Olá, eu sou <br>
+                        <span class="gradient-text">Danilo Sarmento Barros</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Desenvolvedor de Software & Acadêmico na <strong class="highlight-unb">Universidade de Brasília (UnB)</strong>.
+                        Apaixonado por criar soluções inteligentes em <span class="typing-text" id="typing-element"></span>
+                    </p>
+
+                    <div class="hero-tech-pills">
+                        <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="tech-pill"><i class="fa-solid fa-code"></i> C# / .NET</span>
+                        <span class="tech-pill"><i class="fa-solid fa-microchip"></i> C / C++</span>
+                        <span class="tech-pill"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="tech-pill"><i class="fa-solid fa-brain"></i> NLP & ML</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary">
+                            <span>Explorar Projetos</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="#contato" class="btn btn-outline">
+                            <span>Entrar em Contato</span>
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-card">
+                        <div class="avatar-ring"></div>
+                        <img src="https://avatars.githubusercontent.com/u/104795603?v=4" alt="Danilo Sarmento Barros" class="avatar-img">
+                        <div class="avatar-badge">
+                            <i class="fa-solid fa-graduation-cap"></i> UnB
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Quick Metric Cards -->
+                    <div class="floating-card card-1">
+                        <i class="fa-solid fa-code-branch icon-green"></i>
+                        <div>
+                            <span class="floating-val">GitHub</span>
+                            <span class="floating-lbl">@auslogyc</span>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fa-solid fa-terminal icon-purple"></i>
+                        <div>
+                            <span class="floating-val">Liaison & Bot</span>
+                            <span class="floating-lbl">Sistemas Inteligentes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stat Counter Bar -->
+        <section class="stats-bar">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="9">0</h3>
+                    <p class="stat-label">Repositórios de Destaque</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <p class="stat-label">Linguagens Dominadas</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <span class="stat-suffix">%</span>
+                    <p class="stat-label">Dedicação Acadêmica (UnB)</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <span class="stat-suffix">%</span>
+                    <p class="stat-label">Código Limpo & Testado</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mim Section -->
+        <section id="sobre" class="section sobre-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Conheça mais</span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="sobre-grid">
+                    <div class="sobre-text">
+                        <p class="lead-text">
+                            Sou estudante na <strong>Universidade de Brasília (UnB)</strong>, focado em desenvolvimento de software, arquitetura de sistemas, algoritmos e engenharia de software de alta performance.
+                        </p>
+                        <p>
+                            Minha jornada na computação combina rigor acadêmico com projetos práticos do mundo real: desde o desenvolvimento de sistemas para ONGs e integração social (como o <strong>Liaison</strong>) e bots inteligentes de classificação de sentimentos (<strong>Jakebot</strong>), até compiladores com <strong>Flex & Bison</strong> e automação financeira em <strong>C#</strong>.
+                        </p>
+                        
+                        <div class="bio-highlights">
+                            <div class="bio-item">
+                                <div class="bio-icon"><i class="fa-solid fa-building-columns"></i></div>
+                                <div>
+                                    <h4>Formação UnB</h4>
+                                    <p>Engenharia de Software / Ciência da Computação</p>
+                                </div>
+                            </div>
+                            <div class="bio-item">
+                                <div class="bio-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                                <div>
+                                    <h4>Foco de Atuação</h4>
+                                    <p>Sistemas Web, Bots com IA, DevOps e Arquitetura</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sobre-code-window">
+                        <div class="code-window-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-window-title">danilo.config.json</span>
+                        </div>
+                        <pre class="code-content"><code>{
+  <span class="code-key">"nome"</span>: <span class="code-str">"Danilo Sarmento Barros"</span>,
+  <span class="code-key">"universidade"</span>: <span class="code-str">"Universidade de Brasília (UnB)"</span>,
+  <span class="code-key">"github"</span>: <span class="code-str">"https://github.com/auslogyc"</span>,
+  <span class="code-key">"instagram"</span>: <span class="code-str">"@danilosbz"</span>,
+  <span class="code-key">"interesses"</span>: [
+    <span class="code-str">"Engenharia de Software"</span>,
+    <span class="code-str">"Inteligência Artificial & NLP"</span>,
+    <span class="code-str">"Compiladores & Algoritmos"</span>,
+    <span class="code-str">"DevOps & CI/CD"</span>
+  ],
+  <span class="code-key">"status"</span>: <span class="code-str">"Construindo o futuro com código!"</span>
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projetos" class="section projetos-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfólio de Código</span>
+                    <h2 class="section-title">Meus Projetos</h2>
+                    <p class="section-subtitle">Projetos desenvolvidos em disciplinas da UnB e iniciativas autorais.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="ai-web">IA & Web</button>
+                    <button class="filter-btn" data-filter="systems">Sistemas & C#</button>
+                    <button class="filter-btn" data-filter="compilers">Compiladores & ED</button>
+                    <button class="filter-btn" data-filter="devops">DevOps & UnB</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1: Liaison -->
+                    <article class="project-card" data-category="ai-web devops">
+                        <div class="project-banner bg-gradient-liaison">
+                            <i class="fa-solid fa-handshake-angle project-icon"></i>
+                            <span class="project-tag-badge">Destaque UnB</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Liaison</h3>
+                            <p class="project-desc">
+                                Plataforma de integração social e universitária desenvolvida na UnB para conectar estudantes a iniciativas de impacto, ONGs e oportunidades de voluntariado.
+                            </p>
+                            <div class="project-tags">
+                                <span>TypeScript</span>
+                                <span>React / Web</span>
+                                <span>Node.js</span>
+                                <span>Impacto Social</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-detail" onclick="openProjectModal('liaison')">
+                                    <i class="fa-solid fa-eye"></i> Detalhes
+                                </button>
+                                <a href="https://github.com/auslogyc" target="_blank" rel="noopener" class="btn-github-link">
+                                    <i class="fa-brands fa-github"></i> Repositório
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Jakebot -->
+                    <article class="project-card" data-category="ai-web devops">
+                        <div class="project-banner bg-gradient-jakebot">
+                            <i class="fa-solid fa-robot project-icon"></i>
+                            <span class="project-tag-badge">MDS UnB</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">JakeBot</h3>
+                            <p class="project-desc">
+                                Bot inteligente que analisa textos e classifica sentimentos em opiniões positivas, negativas ou neutras através de Processamento de Linguagem Natural (NLP).
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>Machine Learning</span>
+                                <span>GitHub Actions</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-detail" onclick="openProjectModal('jakebot')">
+                                    <i class="fa-solid fa-eye"></i> Detalhes
+                                </button>
+                                <a href="https://github.com/auslogyc/2025_1-Jakebot" target="_blank" rel="noopener" class="btn-github-link">
+                                    <i class="fa-brands fa-github"></i> Repositório
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Controle de Gastos Residenciais -->
+                    <article class="project-card" data-category="systems">
+                        <div class="project-banner bg-gradient-gastos">
+                            <i class="fa-solid fa-wallet project-icon"></i>
+                            <span class="project-tag-badge">C# / .NET</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Controle de Gastos Residenciais</h3>
+                            <p class="project-desc">
+                                Aplicação completa para gestão de orçamentos domésticos, cálculo de despesas fixas/variáveis e acompanhamento financeiro com arquitetura limpa.
+                            </p>
+                            <div class="project-tags">
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>POO Avançada</span>
+                                <span>Arquitetura Limpa</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-detail" onclick="openProjectModal('gastos')">
+                                    <i class="fa-solid fa-eye"></i> Detalhes
+                                </button>
+                                <a href="https://github.com/auslogyc/controle-gastos-residenciais" target="_blank" rel="noopener" class="btn-github-link">
+                                    <i class="fa-brands fa-github"></i> Repositório
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Compiladores Flex & Bison -->
+                    <article class="project-card" data-category="compilers">
+                        <div class="project-banner bg-gradient-compiladores">
+                            <i class="fa-solid fa-code-compare project-icon"></i>
+                            <span class="project-tag-badge">C / Compiladores</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Compiladores (Flex & Bison)</h3>
+                            <p class="project-desc">
+                                Construção de analisador léxico (Flex) e analisador sintático (Bison) para processamento e tradução de linguagens de programação na disciplina de Compiladores.
+                            </p>
+                            <div class="project-tags">
+                                <span>C / C++</span>
+                                <span>Flex</span>
+                                <span>Bison</span>
+                                <span>Teoria das Linguagens</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-detail" onclick="openProjectModal('compiladores')">
+                                    <i class="fa-solid fa-eye"></i> Detalhes
+                                </button>
+                                <a href="https://github.com/auslogyc/compiladores-flex-bison" target="_blank" rel="noopener" class="btn-github-link">
+                                    <i class="fa-brands fa-github"></i> Repositório
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: GCES Individual -->
+                    <article class="project-card" data-category="devops">
+                        <div class="project-banner bg-gradient-gces">
+                            <i class="fa-solid fa-server project-icon"></i>
+                            <span class="project-tag-badge">DevOps UnB</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">GCES Individual</h3>
+                            <p class="project-desc">
+                                Projeto prático de Gestão de Configuração e Evolução de Software englobando containerização em Docker, pipelines de CI/CD e testes automatizados.
+                            </p>
+                            <div class="project-tags">
+                                <span>Docker</span>
+                                <span>CI/CD</span>
+                                <span>Testes Unitários</span>
+                                <span>Git Flow</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-detail" onclick="openProjectModal('gces')">
+                                    <i class="fa-solid fa-eye"></i> Detalhes
+                                </button>
+                                <a href="https://github.com/auslogyc/gces_individual" target="_blank" rel="noopener" class="btn-github-link">
+                                    <i class="fa-brands fa-github"></i> Repositório
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Estruturas de Dados -->
+                    <article class="project-card" data-category="compilers">
+                        <div class="project-banner bg-gradient-ed">
+                            <i class="fa-solid fa-diagram-project project-icon"></i>
+                            <span class="project-tag-badge">Algoritmos</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Estruturas de Dados</h3>
+                            <p class="project-desc">
+                                Coleção de estruturas de dados essenciais (árvores AVL, grafos, listas encadeadas, tabelas hash) e algoritmos de busca e ordenação implementados com otimização.
+                            </p>
+                            <div class="project-tags">
+                                <span>C / C++</span>
+                                <span>Árvores & Grafos</span>
+                                <span>Complexidade O(n)</span>
+                                <span>Algoritmos</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-detail" onclick="openProjectModal('ed')">
+                                    <i class="fa-solid fa-eye"></i> Detalhes
+                                </button>
+                                <a href="https://github.com/auslogyc/Estruturas-de-Dados" target="_blank" rel="noopener" class="btn-github-link">
+                                    <i class="fa-brands fa-github"></i> Repositório
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades Section -->
+        <section id="habilidades" class="section habilidades-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Competências Técnicas</span>
+                    <h2 class="section-title">Habilidades & Tecnologias</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-category-card">
+                        <div class="skill-cat-header">
+                            <i class="fa-solid fa-code icon-cyan"></i>
+                            <h3>Linguagens de Programação</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python (Data & NLP)</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C# / .NET</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C / C++</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript / TypeScript</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Frameworks -->
+                    <div class="skill-category-card">
+                        <div class="skill-cat-header">
+                            <i class="fa-solid fa-cubes icon-purple"></i>
+                            <h3>Ferramentas & DevOps</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & GitHub Workflows</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Docker & Containers</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Flex & Bison (Parsers)</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>CI / CD Pipelines</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Concepts -->
+                    <div class="skill-category-card">
+                        <div class="skill-cat-header">
+                            <i class="fa-solid fa-brain icon-green"></i>
+                            <h3>Fundamentos da Computação</h3>
+                        </div>
+                        <div class="skill-chips">
+                            <span class="chip"><i class="fa-solid fa-check"></i> Engenharia de Software</span>
+                            <span class="chip"><i class="fa-solid fa-check"></i> Orientação a Objetos</span>
+                            <span class="chip"><i class="fa-solid fa-check"></i> Processamento de Linguagem Natural</span>
+                            <span class="chip"><i class="fa-solid fa-check"></i> Estruturas de Dados Avançadas</span>
+                            <span class="chip"><i class="fa-solid fa-check"></i> Teoria dos Compiladores</span>
+                            <span class="chip"><i class="fa-solid fa-check"></i> Testes & Cobertura de Código</span>
+                            <span class="chip"><i class="fa-solid fa-check"></i> Métodos Ágeis (Scrum/Kanban)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UnB & Formação Section -->
+        <section id="unb" class="section unb-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Trajetória Acadêmica</span>
+                    <h2 class="section-title">Universidade de Brasília (UnB)</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="unb-card">
+                    <div class="unb-header">
+                        <div class="unb-logo-wrap">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <div>
+                            <h3 class="unb-title">Universidade de Brasília - UnB</h3>
+                            <p class="unb-subtitle">Faculdade UnB Gama (FGA) / Instituto de Ciências Exatas (IE)</p>
+                        </div>
+                    </div>
+
+                    <div class="unb-body">
+                        <p>
+                            Como estudante da UnB, desenvolvo projetos práticos alinhados às melhores práticas da indústria de software. As principais disciplinas integradas aos meus projetos de desenvolvimento incluem:
+                        </p>
+                        
+                        <div class="disciplinas-grid">
+                            <div class="disc-card">
+                                <h4>MDS - Métodos de Dev. de Software</h4>
+                                <p>Criação de produtos de software completos com metodologias ágeis e CI/CD (Projeto <em>Jakebot</em>).</p>
+                            </div>
+                            <div class="disc-card">
+                                <h4>Compiladores</h4>
+                                <p>Construção de analisadores léxicos e sintáticos utilizando ferramentas Flex & Bison em C/C++.</p>
+                            </div>
+                            <div class="disc-card">
+                                <h4>GCES - Gestão de Configuração</h4>
+                                <p>Automatização de builds, containerização Docker, gerenciamento de dependências e testes.</p>
+                            </div>
+                            <div class="disc-card">
+                                <h4>Estruturas de Dados & Algoritmos</h4>
+                                <p>Análise de complexidade temporal/espacial, implementação de árvores, grafos e tabelas hash.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="section contato-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Vamos Conversar</span>
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">Sinta-se à vontade para enviar uma mensagem ou me encontrar nas redes sociais.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contato-grid">
+                    <div class="contato-info">
+                        <div class="info-card">
+                            <i class="fa-brands fa-github info-icon icon-cyan"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/auslogyc" target="_blank" rel="noopener">github.com/auslogyc</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fa-brands fa-instagram info-icon icon-pink"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://instagram.com/danilosbz" target="_blank" rel="noopener">@danilosbz</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fa-solid fa-graduation-cap info-icon icon-green"></i>
+                            <div>
+                                <h4>Instituição</h4>
+                                <p>Universidade de Brasília (UnB)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contato-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Seu Nome</label>
+                            <input type="text" id="name" required placeholder="Digite seu nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Seu E-mail</label>
+                            <input type="email" id="email" required placeholder="seu.email@exemplo.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" rows="4" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Enviar Mensagem</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Danilo Sarmento Barros. Todos os direitos reservados.</p>
+            <p class="footer-subtext">Desenvolvido para a Universidade de Brasília (UnB) | GitHub: <a href="https://github.com/auslogyc" target="_blank">@auslogyc</a></p>
+        </div>
+    </footer>
+
+    <!-- Dynamic Project Detail Modal -->
+    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            <div id="modal-content-area">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Mensagem enviada com sucesso!</span>
+    </div>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>
