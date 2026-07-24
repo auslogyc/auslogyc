@@ -65,7 +65,6 @@ developer = {
 |--------------------------------------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |[📋 projeto-livre-danilo](https://github.com/auslogyc/projeto-livre-danilo)      |OOP free project — Object Oriented Programming course|![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)            |
 |[🏗️ Estruturas-de-Dados](https://github.com/auslogyc/Estruturas-de-Dados)        |Data Structures implementations and exercises        |![C](https://img.shields.io/badge/-C-00599C?style=flat-square&logo=c&logoColor=white)                           |
-|[⚙️ compiladores-flex-bison](https://github.com/auslogyc/compiladores-flex-bison)|Compiler design with Flex & Bison                    |![C](https://img.shields.io/badge/-C-00599C?style=flat-square&logo=c&logoColor=white)                           |
 |[📝 formulario.html](https://github.com/auslogyc/formulario.html)                |Interactive web form project                         |![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)                |
 |[🖊️ excalidraw (fork)](https://github.com/auslogyc/excalidraw)                   |Fork of the virtual whiteboard tool                  |![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)|
 

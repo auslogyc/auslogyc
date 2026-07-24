@@ -200,21 +200,6 @@ const projectData = {
         techs: ["C#", ".NET 8", "Programação Orientada a Objetos (POO)", "LINQ", "Clean Architecture"],
         github: "https://github.com/auslogyc/controle-gastos-residenciais"
     },
-    compiladores: {
-        title: "Compiladores com Flex & Bison",
-        subtitle: "Análise Léxica e Sintática | Compiladores UnB",
-        icon: "fa-code-compare",
-        gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-        desc: "Projeto desenvolvido na disciplina de Compiladores da UnB para o desenho e implementação de uma linguagem de programação customizada. Utiliza o Flex para tokenização e o Bison para parsing sintático baseados em gramática livre de contexto.",
-        features: [
-            "Analisador Léxico (Flex) com suporte a números, identificadores e operadores",
-            "Analisador Sintático LALR (Bison/Yacc) com recuperação de erros",
-            "Construção de Árvore Sintática Abstrata (AST) em C/C++",
-            "Tabela de Símbolos com verificação de escopo e tipos"
-        ],
-        techs: ["C / C++", "Flex (Lexer)", "Bison (Parser)", "Teoria dos Compiladores", "Makefile"],
-        github: "https://github.com/auslogyc/compiladores-flex-bison"
-    },
     gces: {
         title: "GCES Individual - DevOps & Automação",
         subtitle: "Gestão de Configuração e Evolução de Software | UnB",
