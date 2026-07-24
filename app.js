@@ -183,7 +183,7 @@ const projectData = {
             "Documentação automatizada de arquitetura e cobertura de testes"
         ],
         techs: ["Python 3", "NLP (Natural Language Processing)", "Machine Learning", "GitHub Actions", "PyTest", "Docker"],
-        github: "https://github.com/auslogyc/2025_1-Jakebot"
+        github: "https://github.com/unb-mds/2025_1-Jakebot"
     },
     gastos: {
         title: "Controle de Gastos Residenciais",
