@@ -168,7 +168,7 @@ const projectData = {
             "Arquitetura escalável com foco na experiência do usuário (UX/UI)"
         ],
         techs: ["TypeScript", "React", "Node.js", "Express", "CSS Glassmorphism", "PostgreSQL"],
-        github: "https://github.com/auslogyc/Liaison"
+        github: "https://github.com/mdsreq-fga-unb/REQ-2026.1-T01-Liaison"
     },
     jakebot: {
         title: "JakeBot - Classificador de Sentimentos",
